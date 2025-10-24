@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root2Reuse | Login</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Root2Reuse Login</h2>
+    <input type="text" id="username" placeholder="Enter username" required>
+    <input type="password" id="password" placeholder="Enter password" required>
+    <button onclick="login()">Login</button>
+    <div id="message"></div>
+    <div class="footer-text">“Remove the roots, reuse the wood.”</div>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const message = document.getElementById("message");
+
+      const validUser = "admin";
+      const validPass = "abc123";
+
+      if (username === "" || password === "") {
+        message.innerHTML = "<p class='error'>Please fill in all fields!</p>";
+        return;
+      }
+
+      if (username === validUser && password === validPass) {
+        message.innerHTML = "<p class='success'>Login successful! Redirecting...</p>";
+        setTimeout(() => {
+          window.location.href="../index.html"; // Change this to your actual homepage
+        }, 1500);
+      } else {
+        message.innerHTML = "<p class='error'>Invalid username or password!</p>";
+      }
+    }
+  </script>
+</body>
+</html>
