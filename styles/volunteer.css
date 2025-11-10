@@ -54,19 +54,6 @@
             color: #a8d5ba;
         }
 
-        .login-btn {
-            background-color: #a8d5ba;
-            color: #2d5016;
-            padding: 0.6rem 1.5rem;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .login-btn:hover {
-            background-color: #70ad47;
-            color: white;
-        }
-
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #2d5016 0%, #548235 100%);

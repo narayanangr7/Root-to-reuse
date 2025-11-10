@@ -105,6 +105,7 @@
             font-size: 1.1rem;
             font-weight: bold;
             transition: all 0.3s;
+            /* fadeInUp animation  */
             animation: fadeInUp 1s ease 0.6s both;
         }
 

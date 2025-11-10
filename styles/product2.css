@@ -57,10 +57,6 @@
             animation: fadeIn 0.5s;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
 
         /* Header */
         .header {
@@ -346,11 +342,11 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
-
+        /* pridect la irukkura add card color */
         .enquiry-btn:hover {
-            background-color: #2d5016;
+            background-color: #0d0e0d;
         }
-
+        /* prodect la Product Specifications oda margin */
         .specifications {
             margin-top: 40px;
         }
