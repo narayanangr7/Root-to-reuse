@@ -8,47 +8,39 @@
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 2px;
         }
         .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #6fc163af;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+    background-color: #156509;
+    box-shadow: 0 2px 5px rgba(242, 239, 239, 0.1);
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #21c4238a;
+    color: #f0f6f0;
     text-decoration: none;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
 
-.nav-links li {
-    position: relative;
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #5a0a0aff;
-    font-weight: 500;
-    padding: 10px 15px;
-    transition: color 0.3s;
-}
-
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
 .nav-links a:hover {
-    color: #007a4d;
+    color: #09f39d;
 }
         .container {
             max-width: 1200px;
