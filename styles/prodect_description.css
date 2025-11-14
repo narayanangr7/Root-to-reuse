@@ -1,0 +1,223 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* nav color background gradient */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(133, 199, 120, 0.8), rgba(247, 248, 247, 0.8));
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #6fc163af;
+            margin: auto;
+            padding: 1rem 2rem;
+            /* 1rem = 16px */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        nav ul {
+            /* <ul><ol> la irukkura . a kattathu */
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(52, 34, 19);
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: color 0.3s;
+
+        }
+
+
+
+
+        nav ul li a:hover {
+            /* li la irukkura value a blare akkurathu opecity */
+
+            color: #172721;
+            border-bottom: 5px solid black;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 2rem 2rem 1rem;
+            padding: 0.75rem 1.5rem;
+            /* button background color hover pannum potu  mathurathukku use pannuvange  */
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: white;
+            color: #4A7C3B;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-image {
+            background-color: #8B5A3C;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            min-height: 400px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-info h1 {
+            color: #3D5A2D;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            color: #FF6B35;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            /* <ul><ol> la irukkura . a kattathu */
+            list-style: none;
+        }
+
+        .features li {
+            color: #555;
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #7FB069;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .specifications {
+            margin-top: 3rem;
+        }
+
+        .specifications h2 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .spec-table {
+            width: 100%;
+
+        }
+
+        .spec-table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .spec-table td {
+            padding: 1rem;
+        }
+
+        .spec-table td:first-child {
+            font-weight: 600;
+            color: #333;
+            width: 40%;
+        }
+
+        .spec-table td:last-child {
+            /* fond color perant call child  */
+            color: #666;
+        }
+
+        .enquiry-section {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .enquiry-section h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .enquiry-button {
+            background-color: #5A7C3B;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .enquiry-button:hover {
+            background-color: #4A6C2B;
+        }
+
+        @media (max-width: 768px) {
+            .product-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .product-card {
+                padding: 1.5rem;
+            }
+        }
