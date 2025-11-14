@@ -240,3 +240,18 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+    nav ul {
+      display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    nav ul li a {
+        padding: 2px 2px;
+        font-size: 0.9rem;
+    }
+
+}
