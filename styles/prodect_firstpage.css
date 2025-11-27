@@ -416,16 +416,16 @@ body {
 @media (max-width: 360px) {
 
   /* Move navbar below hero section */
- nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
 
-    nav ul li a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
 
 
   /* Make hero section come first */
