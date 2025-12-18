@@ -6,57 +6,58 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(rgba(133, 199, 120, 0.8), rgba(247, 248, 247, 0.8));
             min-height: 100vh;
-            padding: 20px;
         }
 
-        nav {
-            background-color: #6fc163af;
+/* Navigation - Fully Responsive */
+.nav-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6fc163af;
+    box-shadow: 0 2px 5px rgba(196, 191, 191, 0.1);
+    position: relative;
+    flex-wrap: wrap;
+}
 
-            padding: 1rem 0;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+.logo {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-weight: bold;
+    color: #21c4238a;
+    text-decoration: none;
+    z-index: 10;
+}
 
-        .nav-container {
-            margin-bottom: 1rcap;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-        }
+.nav-links li {
+    position: relative;
+}
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: rgb(52, 34, 19);
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, border 0.3s;
+    display: block;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
 
-        .nav-links a {
-            text-decoration: none;
-            color: rgb(52, 34, 19);
-            font-weight: 500;
-            padding: 10px 15px;
-            transition: color 0.3s;
-        }
+.nav-links a:hover {
+    color: #172721;
+    border-bottom: 5px solid black;
+}
 
-        .nav-links a:hover {
-            color: #172721;
-            border-bottom: 5px solid black;
-        }
-
-        .nav-links a:hover {
-            color: #447959;
-        }
 
 
         @media (max-width: 768px) {
